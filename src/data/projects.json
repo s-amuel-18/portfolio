@@ -12,6 +12,11 @@
             "PostgreSQL",
             "TypeORM"
         ],
+        "content": {
+            "en": "## System Architecture\nThis E-commerce API was built from the ground up using **NestJS** and **TypeORM** for robust data handling. It implements a complete JWT-based authentication flow with role-based access control (RBAC).\n\n### Key Features\n- Secure User Authentication and Authorization\n- Complex Product Catalog Management with filtering\n- Transactional Order Processing system\n- Webhook integration for payment status updates\n\nThe PostgreSQL database ensures reliable data integrity, while Docker is used for seamless deployment environments.",
+            "es": "## Arquitectura del Sistema\nEsta API de E-commerce fue construida desde cero utilizando **NestJS** y **TypeORM** para un manejo robusto de datos. Implementa un flujo completo de autenticación basado en JWT con control de acceso basado en roles (RBAC).\n\n### Características Clave\n- Autenticación y Autorización de usuarios segura\n- Gestión compleja del Catálogo de Productos con filtros\n- Sistema transaccional de Procesamiento de Pedidos\n- Integración de Webhooks para actualización de pagos\n\nLa base de datos PostgreSQL garantiza la integridad de los datos, mientras que Docker se utiliza para despliegues fluidos."
+        },
+        "projectUrl": "https://api.example-ecommerce.com",
         "image": "/images/project-ecommerce.png",
         "github": "https://github.com/s-amuel-18",
         "demo": "",
@@ -32,6 +37,11 @@
             "Laravel",
             "MySQL"
         ],
+        "content": {
+            "en": "## Microservice Overview\nDeveloped a highly scalable Task Management microservice using **Laravel** and **MySQL**. This service manages task lifecycles, assignments, and real-time state changes via WebSockets.\n\n### Technical Highlights\n- Domain-Driven Design (DDD) approach\n- Event sourcing for critical task updates\n- High availability queue processing with Redis\n- Comprehensive API documentation via Swagger\n\nThe system is currently handling massive throughput with high consistency.",
+            "es": "## Resumen del Microservicio\nDesarrollé un microservicio de Gestión de Tareas altamente escalable utilizando **Laravel** y **MySQL**. Este servicio gestiona ciclos de vida de tareas, asignaciones y cambios de estado en tiempo real vía WebSockets.\n\n### Aspectos Técnicos Destacados\n- Enfoque de Diseño Guiado por el Dominio (DDD)\n- Event sourcing para actualizaciones críticas de tareas\n- Procesamiento de colas de alta disponibilidad con Redis\n- Documentación exhaustiva de la API con Swagger\n\nEl sistema maneja actualmente un rendimiento masivo con alta consistencia."
+        },
+        "projectUrl": "https://task-manager.example.com",
         "image": "/images/project-task.png",
         "github": "https://github.com/s-amuel-18",
         "demo": "",

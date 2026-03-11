@@ -6,6 +6,23 @@ import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const experience = getExperienceData;
+
+const techIcons: Record<string, string> = {
+  "Node.js": "logos:nodejs-icon",
+  "NestJS": "logos:nestjs",
+  "TypeScript": "logos:typescript-icon",
+  "PostgreSQL": "logos:postgresql",
+  "AWS": "logos:aws",
+  "PHP": "logos:php",
+  "Laravel": "logos:laravel",
+  "MySQL": "logos:mysql",
+  "Docker": "logos:docker-icon",
+  "Express": "simple-icons:express",
+  "MongoDB": "logos:mongodb-icon",
+  "TypeORM": "logos:typeorm"
+};
+
+const getIcon = (tech: string) => techIcons[tech] || "lucide:code";
 ---
 
 <section id="experience" class="py-24 border-t border-border/20">
@@ -58,9 +75,10 @@ const experience = getExperienceData;
                     ))}
                   </ul>
 
-                  <div class="flex flex-wrap gap-2 pt-6 border-t border-border/20">
+                  <div class="flex flex-wrap gap-3 pt-6 border-t border-border/20">
                     {job.tech.map(t => (
-                      <span class="px-3 py-1.5 bg-background/40 text-muted-foreground text-[10px] font-bold rounded-lg border border-border/40 hover:text-accent-cyan hover:border-accent-cyan/30 transition-all uppercase tracking-widest">
+                      <span class="flex items-center gap-1.5 px-3 py-1.5 bg-background/40 text-muted-foreground text-[10px] font-bold rounded-lg border border-border/40 hover:text-accent-cyan hover:border-accent-cyan/30 transition-all uppercase tracking-widest cursor-default group/tech">
+                        <iconify-icon icon={getIcon(t)} class="text-sm group-hover/tech:scale-110 transition-transform"></iconify-icon>
                         {t}
                       </span>
                     ))}

@@ -4,19 +4,24 @@
         "categoryEs": "Backend",
         "techs": [
             {
-                "name": "Node.js"
+                "name": "Node.js",
+                "icon": "logos:nodejs-icon"
             },
             {
-                "name": "NestJS"
+                "name": "NestJS",
+                "icon": "logos:nestjs"
             },
             {
-                "name": "TypeScript"
+                "name": "TypeScript",
+                "icon": "logos:typescript-icon"
             },
             {
-                "name": "PHP"
+                "name": "PHP",
+                "icon": "logos:php"
             },
             {
-                "name": "Laravel"
+                "name": "Laravel",
+                "icon": "logos:laravel"
             }
         ]
     },
@@ -25,16 +30,20 @@
         "categoryEs": "Frontend",
         "techs": [
             {
-                "name": "React.js"
+                "name": "React.js",
+                "icon": "logos:react"
             },
             {
-                "name": "HTML5"
+                "name": "HTML5",
+                "icon": "logos:html-5"
             },
             {
-                "name": "CSS3"
+                "name": "CSS3",
+                "icon": "logos:css-3"
             },
             {
-                "name": "JavaScript"
+                "name": "JavaScript",
+                "icon": "logos:javascript"
             }
         ]
     },
@@ -43,13 +52,16 @@
         "categoryEs": "Bases de Datos",
         "techs": [
             {
-                "name": "MySQL"
+                "name": "MySQL",
+                "icon": "logos:mysql"
             },
             {
-                "name": "PostgreSQL"
+                "name": "PostgreSQL",
+                "icon": "logos:postgresql"
             },
             {
-                "name": "MongoDB"
+                "name": "MongoDB",
+                "icon": "logos:mongodb-icon"
             }
         ]
     },
@@ -58,10 +70,12 @@
         "categoryEs": "Herramientas y DevOps",
         "techs": [
             {
-                "name": "Git"
+                "name": "Git",
+                "icon": "logos:git-icon"
             },
             {
-                "name": "WordPress"
+                "name": "WordPress",
+                "icon": "logos:wordpress-icon"
             }
         ]
     },
@@ -70,10 +84,12 @@
         "categoryEs": "Actualmente Aprendiendo",
         "techs": [
             {
-                "name": "Docker"
+                "name": "Docker",
+                "icon": "logos:docker-icon"
             },
             {
-                "name": "AWS"
+                "name": "AWS",
+                "icon": "logos:aws"
             }
         ]
     }

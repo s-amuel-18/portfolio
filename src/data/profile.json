@@ -1,0 +1,27 @@
+{
+    "name": "Samuel",
+    "shortName": "Samuel Graterol",
+    "roles": [
+        "Fullstack Developer",
+        "Backend Specialist",
+        "Software Engineer"
+    ],
+    "tagline": "Building scalable systems & automating processes since 2021",
+    "image": "/images/profile.png",
+    "socials": {
+        "github": "https://github.com/s-amuel-18",
+        "linkedin": "https://linkedin.com/in/samuel-graterol-lobo",
+        "email": "samueldeveloper20@gmail.com"
+    },
+    "status": {
+        "available": true,
+        "badgeEn": "Available for work 🟢",
+        "badgeEs": "Disponible 🟢"
+    },
+    "stats": {
+        "experienceYears": 4,
+        "projectsCompleted": 8,
+        "companiesWorked": 3,
+        "countries": 2
+    }
+}

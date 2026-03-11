@@ -1,0 +1,76 @@
+---
+import getExperienceData from '../../data/experience.json';
+import { AnimatedSection } from '../ui/AnimatedSection';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const experience = getExperienceData;
+---
+
+<section id="experience" class="py-24 border-t border-border/20">
+  <div class="max-w-4xl mx-auto">
+    <AnimatedSection client:visible>
+      <div class="mb-20">
+        <h2 class="text-4xl md:text-5xl font-black mb-4 text-foreground text-center tracking-tight">
+          {t("experience.title")}
+        </h2>
+        <div class="h-1.5 w-24 bg-gradient-main mx-auto rounded-full"></div>
+      </div>
+    </AnimatedSection>
+
+    <div class="relative space-y-16">
+      <!-- Continuous Timeline Line -->
+      <div class="absolute left-4 md:left-8 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-cyan/50 via-accent-indigo/20 to-transparent"></div>
+
+      {experience.map((job, index) => (
+        <div class="relative pl-12 md:pl-20 group">
+          <!-- Timeline Node/Dot -->
+          <div class="absolute left-[9px] md:left-[25px] top-0 transform w-4 h-4 rounded-full bg-accent-cyan shadow-glow-cyan border-4 border-background z-10 transition-transform group-hover:scale-150"></div>
+          
+          <AnimatedSection client:visible delay={index * 0.1}>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 items-start">
+              <!-- Date range persistent on larger screens -->
+              <div class="lg:col-span-1">
+                <span class="text-[10px] font-black text-accent-cyan uppercase tracking-[0.2em] bg-accent-cyan/5 px-3 py-1.5 rounded-lg border border-accent-cyan/20 glass">
+                  {job.startDate} — {job.current ? t("experience.present") : job.endDate}
+                </span>
+              </div>
+
+              <!-- Main Card Content -->
+              <div class="lg:col-span-3">
+                <div class="glass p-8 rounded-3xl shadow-2xl glass-hover relative overflow-hidden">
+                  <div class="absolute top-0 right-0 w-32 h-32 bg-accent-cyan/5 rounded-full -mr-16 -mt-16 blur-2xl"></div>
+                  
+                  <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+                    <div>
+                      <h3 class="text-2xl font-black text-foreground group-hover:text-accent-cyan transition-colors tracking-tight">{job.role}</h3>
+                      <p class="text-lg text-muted-foreground font-bold mt-1">@ {job.company}</p>
+                    </div>
+                  </div>
+                  
+                  <ul class="space-y-4 mb-10">
+                    {job.description[lang].map(item => (
+                      <li class="flex items-start gap-4 text-muted-foreground leading-relaxed font-medium">
+                        <span class="mt-2 w-2 h-2 rounded-full bg-accent-cyan/40 shrink-0"></span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div class="flex flex-wrap gap-2 pt-6 border-t border-border/20">
+                    {job.tech.map(t => (
+                      <span class="px-3 py-1.5 bg-background/40 text-muted-foreground text-[10px] font-bold rounded-lg border border-border/40 hover:text-accent-cyan hover:border-accent-cyan/30 transition-all uppercase tracking-widest">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

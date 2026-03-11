@@ -1,0 +1,80 @@
+[
+    {
+        "category": "Backend",
+        "categoryEs": "Backend",
+        "techs": [
+            {
+                "name": "Node.js"
+            },
+            {
+                "name": "NestJS"
+            },
+            {
+                "name": "TypeScript"
+            },
+            {
+                "name": "PHP"
+            },
+            {
+                "name": "Laravel"
+            }
+        ]
+    },
+    {
+        "category": "Frontend",
+        "categoryEs": "Frontend",
+        "techs": [
+            {
+                "name": "React.js"
+            },
+            {
+                "name": "HTML5"
+            },
+            {
+                "name": "CSS3"
+            },
+            {
+                "name": "JavaScript"
+            }
+        ]
+    },
+    {
+        "category": "Databases",
+        "categoryEs": "Bases de Datos",
+        "techs": [
+            {
+                "name": "MySQL"
+            },
+            {
+                "name": "PostgreSQL"
+            },
+            {
+                "name": "MongoDB"
+            }
+        ]
+    },
+    {
+        "category": "Tools & DevOps",
+        "categoryEs": "Herramientas y DevOps",
+        "techs": [
+            {
+                "name": "Git"
+            },
+            {
+                "name": "WordPress"
+            }
+        ]
+    },
+    {
+        "category": "Currently Learning",
+        "categoryEs": "Actualmente Aprendiendo",
+        "techs": [
+            {
+                "name": "Docker"
+            },
+            {
+                "name": "AWS"
+            }
+        ]
+    }
+]

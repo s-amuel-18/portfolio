@@ -1,0 +1,17 @@
+---
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const year = new Date().getFullYear();
+---
+
+<footer class="py-12 border-t border-border/20 text-center mt-24 relative overflow-hidden">
+  <div class="absolute inset-0 bg-accent-indigo/5 blur-[100px] -z-10 rounded-full w-1/2 mx-auto"></div>
+  <p class="text-muted-foreground text-sm pb-3 font-bold">
+    © {year} <span class="text-foreground">Samuel Graterol</span>. {lang === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'}
+  </p>
+  <p class="text-muted-foreground text-[10px] font-black uppercase tracking-widest opacity-60">
+    {t("footer.builtWith")}
+  </p>
+</footer>

@@ -1,0 +1,40 @@
+---
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const langSwitcherUrl = lang === 'en' ? '/es/' : '/';
+const langSwitcherLabel = lang === 'en' ? 'ES' : 'EN';
+---
+
+<header class="fixed top-0 w-full z-50 glass border-b border-border/20">
+  <div class="mx-auto max-w-5xl px-6 h-20 flex items-center justify-between transition-all duration-300">
+    <!-- Logo -->
+    <a href={lang === 'en' ? '/' : '/es/'} class="text-2xl font-black tracking-tightest text-foreground hover:text-accent-cyan transition-all group">
+      SG<span class="text-accent-cyan group-hover:animate-pulse">.</span>
+    </a>
+
+    <!-- Nav Links (Desktop) -->
+    <nav class="hidden md:flex items-center gap-10">
+      <a href="#about" class="text-xs font-black uppercase tracking-[0.2em] text-muted-foreground hover:text-accent-cyan transition-all">{t("nav.about")}</a>
+      <a href="#experience" class="text-xs font-black uppercase tracking-[0.2em] text-muted-foreground hover:text-accent-cyan transition-all">{t("nav.experience")}</a>
+      <a href="#skills" class="text-xs font-black uppercase tracking-[0.2em] text-muted-foreground hover:text-accent-cyan transition-all">{t("nav.skills")}</a>
+      <a href="#projects" class="text-xs font-black uppercase tracking-[0.2em] text-muted-foreground hover:text-accent-cyan transition-all">{t("nav.projects")}</a>
+    </nav>
+
+    <!-- Actions -->
+    <div class="flex items-center gap-6">
+      <a href={langSwitcherUrl} class="px-4 py-2 text-[10px] font-black border border-border/40 rounded-xl text-muted-foreground hover:text-accent-cyan hover:border-accent-cyan/30 glass transition-all uppercase tracking-widest">
+        {langSwitcherLabel}
+      </a>
+      <a href={t("cv.url")} target="_blank" class="hidden md:inline-flex px-5 py-2.5 bg-accent-cyan/10 border border-accent-cyan/30 text-accent-cyan text-xs font-black rounded-xl hover:bg-accent-cyan hover:text-primary-foreground transition-all uppercase tracking-widest">
+        {t("hero.downloadCV")}
+      </a>
+      <!-- Mobile Menu Toggle -->
+      <button class="md:hidden p-2 text-foreground">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>

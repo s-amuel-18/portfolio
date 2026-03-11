@@ -1,0 +1,30 @@
+[
+    {
+        "id": "tsu-jesus-obrero",
+        "degree": {
+            "en": "Técnico Superior Universitario in Computer Science",
+            "es": "Técnico Superior Universitario en Informática"
+        },
+        "institution": "Instituto Universitario \"Jesús Obrero\"",
+        "startDate": "2020-11",
+        "endDate": "2022-03",
+        "description": {
+            "en": "Higher University Technician degree focusing on software development and systems.",
+            "es": "Título de Técnico Superior Universitario enfocado en desarrollo de software y sistemas."
+        }
+    },
+    {
+        "id": "continuous-education",
+        "degree": {
+            "en": "Continuous Education",
+            "es": "Formación continua"
+        },
+        "institution": "Platzi & Udemy",
+        "startDate": "2020-03",
+        "endDate": "Present",
+        "description": {
+            "en": "Completed various certifications on Backend Development, Architecture, and DevOps.",
+            "es": "Varias certificaciones completadas en Desarrollo Backend, Arquitectura de Software y DevOps."
+        }
+    }
+]

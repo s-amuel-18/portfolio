@@ -1,0 +1,43 @@
+[
+    {
+        "id": "e-commerce-api",
+        "title": "E-Commerce API",
+        "description": {
+            "en": "A robust and scalable e-commerce API built with NestJS, featuring user authentication, product management, and order processing.",
+            "es": "Una API de e-commerce robusta y escalable construida con NestJS, con autenticación de usuarios, gestión de productos y procesamiento de pedidos."
+        },
+        "tech": [
+            "Node.js",
+            "NestJS",
+            "PostgreSQL",
+            "TypeORM"
+        ],
+        "image": "/images/project-ecommerce.png",
+        "github": "https://github.com/s-amuel-18",
+        "demo": "",
+        "stars": 12,
+        "forks": 3,
+        "language": "TypeScript",
+        "featured": true
+    },
+    {
+        "id": "task-manager-service",
+        "title": "Task Management Service",
+        "description": {
+            "en": "Microservice for task management with real-time updates and notifications.",
+            "es": "Microservicio para la gestión de tareas con actualizaciones en tiempo real y notificaciones."
+        },
+        "tech": [
+            "PHP",
+            "Laravel",
+            "MySQL"
+        ],
+        "image": "/images/project-task.png",
+        "github": "https://github.com/s-amuel-18",
+        "demo": "",
+        "stars": 8,
+        "forks": 1,
+        "language": "PHP",
+        "featured": true
+    }
+]

@@ -1,0 +1,44 @@
+---
+import educationData from '../../data/education.json';
+import { AnimatedSection } from '../ui/AnimatedSection';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const education = educationData;
+---
+
+<section id="education" class="py-24 border-t border-border/20">
+  <AnimatedSection client:visible>
+    <div class="mb-16">
+      <h2 class="text-4xl md:text-5xl font-black mb-4 text-foreground text-center tracking-tight">
+        {t("education.title")}
+      </h2>
+      <div class="h-1.5 w-24 bg-gradient-main mx-auto rounded-full"></div>
+    </div>
+  </AnimatedSection>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    {education.map((edu, index) => (
+      <AnimatedSection client:visible delay={index * 0.1}>
+        <div class="glass p-8 rounded-3xl shadow-2xl glass-hover relative overflow-hidden group h-full">
+          <div class="absolute -top-10 -right-10 w-32 h-32 bg-accent-cyan/5 rounded-full blur-2xl group-hover:bg-accent-cyan/10 transition-colors"></div>
+          
+          <div class="flex items-center gap-5 mb-6">
+            <div class="p-4 bg-accent-cyan/10 rounded-2xl text-accent-cyan glass border border-accent-cyan/20">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M6 13v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6"/><path d="M21 10v5"/></svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-black text-foreground tracking-tight">{edu.degree[lang]}</h3>
+              <p class="text-accent-cyan text-sm font-bold mt-1 uppercase tracking-wider">{edu.institution}</p>
+            </div>
+          </div>
+          <p class="text-muted-foreground text-[10px] font-black uppercase tracking-widest mb-4 opacity-60">{edu.startDate} — {edu.endDate}</p>
+          <p class="text-muted-foreground text-sm md:text-base leading-relaxed font-medium">
+            {edu.description[lang]}
+          </p>
+        </div>
+      </AnimatedSection>
+    ))}
+  </div>
+</section>

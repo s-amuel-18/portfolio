@@ -1,0 +1,41 @@
+---
+import skillsData from '../../data/skills.json';
+import { AnimatedSection } from '../ui/AnimatedSection';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const skills = skillsData;
+---
+
+<section id="skills" class="py-24 border-t border-border/20">
+  <AnimatedSection client:visible>
+    <div class="mb-16">
+      <h2 class="text-4xl md:text-5xl font-black mb-4 text-foreground text-center tracking-tight">
+        {t("skills.title")}
+      </h2>
+      <div class="h-1.5 w-24 bg-gradient-main mx-auto rounded-full"></div>
+    </div>
+  </AnimatedSection>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {skills.map((category, index) => (
+      <AnimatedSection client:visible delay={index * 0.1}>
+        <div class="h-full glass p-8 rounded-3xl shadow-xl glass-hover relative overflow-hidden group">
+          <div class="absolute -top-10 -right-10 w-32 h-32 bg-accent-cyan/5 rounded-full blur-2xl group-hover:bg-accent-cyan/10 transition-colors"></div>
+          
+          <h3 class="text-xl font-black text-foreground mb-6 border-b border-border/20 pb-4 tracking-tight">
+            {category.category}
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            {category.techs.map(tech => (
+              <span class="px-4 py-1.5 bg-background/40 text-muted-foreground text-[11px] font-bold rounded-xl border border-border/40 hover:text-accent-cyan hover:border-accent-cyan/30 hover:bg-accent-cyan/5 transition-all cursor-default uppercase tracking-widest">
+                {tech.name}
+              </span>
+            ))}
+          </div>
+        </div>
+      </AnimatedSection>
+    ))}
+  </div>
+</section>

@@ -30,10 +30,10 @@ const education = educationData;
             </div>
             <div>
               <h3 class="text-xl font-black text-foreground tracking-tight">{edu.degree[lang]}</h3>
-              <p class="text-accent-cyan text-sm font-bold mt-1 uppercase tracking-wider">{edu.institution}</p>
+              <p class="text-accent-cyan text-sm font-bold mt-1 uppercase tracking-wider">{typeof edu.institution === 'string' ? edu.institution : edu.institution[lang]}</p>
             </div>
           </div>
-          <p class="text-muted-foreground text-[10px] font-black uppercase tracking-widest mb-4 opacity-60">{edu.startDate} — {edu.endDate}</p>
+          <p class="text-muted-foreground text-[10px] font-black uppercase tracking-widest mb-4 opacity-60">{edu.startDate} — {edu.current ? t("experience.present") : edu.endDate}</p>
           <p class="text-muted-foreground text-sm md:text-base leading-relaxed font-medium">
             {edu.description[lang]}
           </p>

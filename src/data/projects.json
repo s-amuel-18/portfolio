@@ -1,87 +1,91 @@
 [
     {
-        "id": "e-commerce-api",
-        "title": "E-Commerce API",
+        "id": "estei-app",
+        "title": "Estei.app",
         "description": {
-            "en": "A robust and scalable e-commerce API built with NestJS, featuring user authentication, product management, and order processing.",
-            "es": "Una API de e-commerce robusta y escalable construida con NestJS, con autenticación de usuarios, gestión de productos y procesamiento de pedidos."
+            "en": "Venezuelan travel platform — the 'Venezuelan Airbnb' — for booking accommodations and tourist experiences across Venezuela. I led the technical evolution toward a modern, scalable, and high-availability architecture.",
+            "es": "Plataforma turística venezolana — el 'Airbnb venezolano' — para reservas de hospedajes y experiencias dentro de Venezuela. Lideré la evolución técnica hacia una arquitectura moderna, escalable y de alta disponibilidad."
         },
         "tech": [
             "Node.js",
-            "NestJS",
-            "PostgreSQL",
-            "TypeORM"
-        ],
-        "content": {
-            "en": "## System Architecture\nThis E-commerce API was built from the ground up using **NestJS** and **TypeORM** for robust data handling. It implements a complete JWT-based authentication flow with role-based access control (RBAC).\n\n### Key Features\n- Secure User Authentication and Authorization\n- Complex Product Catalog Management with filtering\n- Transactional Order Processing system\n- Webhook integration for payment status updates\n\nThe PostgreSQL database ensures reliable data integrity, while Docker is used for seamless deployment environments.",
-            "es": "## Arquitectura del Sistema\nEsta API de E-commerce fue construida desde cero utilizando **NestJS** y **TypeORM** para un manejo robusto de datos. Implementa un flujo completo de autenticación basado en JWT con control de acceso basado en roles (RBAC).\n\n### Características Clave\n- Autenticación y Autorización de usuarios segura\n- Gestión compleja del Catálogo de Productos con filtros\n- Sistema transaccional de Procesamiento de Pedidos\n- Integración de Webhooks para actualización de pagos\n\nLa base de datos PostgreSQL garantiza la integridad de los datos, mientras que Docker se utiliza para despliegues fluidos."
-        },
-        "projectUrl": "https://api.example-ecommerce.com",
-        "image": "/images/project-ecommerce.png",
-        "github": "https://github.com/s-amuel-18",
-        "demo": "",
-        "stars": 12,
-        "forks": 3,
-        "language": "TypeScript",
-        "featured": true
-    },
-    {
-        "id": "task-manager-service",
-        "title": "Task Management Service",
-        "description": {
-            "en": "Microservice for task management with real-time updates and notifications.",
-            "es": "Microservicio para la gestión de tareas con actualizaciones en tiempo real y notificaciones."
-        },
-        "tech": [
-            "PHP",
-            "Laravel",
-            "MySQL"
-        ],
-        "content": {
-            "en": "## Microservice Overview\nDeveloped a highly scalable Task Management microservice using **Laravel** and **MySQL**. This service manages task lifecycles, assignments, and real-time state changes via WebSockets.\n\n### Technical Highlights\n- Domain-Driven Design (DDD) approach\n- Event sourcing for critical task updates\n- High availability queue processing with Redis\n- Comprehensive API documentation via Swagger\n\nThe system is currently handling massive throughput with high consistency.",
-            "es": "## Resumen del Microservicio\nDesarrollé un microservicio de Gestión de Tareas altamente escalable utilizando **Laravel** y **MySQL**. Este servicio gestiona ciclos de vida de tareas, asignaciones y cambios de estado en tiempo real vía WebSockets.\n\n### Aspectos Técnicos Destacados\n- Enfoque de Diseño Guiado por el Dominio (DDD)\n- Event sourcing para actualizaciones críticas de tareas\n- Procesamiento de colas de alta disponibilidad con Redis\n- Documentación exhaustiva de la API con Swagger\n\nEl sistema maneja actualmente un rendimiento masivo con alta consistencia."
-        },
-        "projectUrl": "https://task-manager.example.com",
-        "image": "/images/project-task.png",
-        "github": "https://github.com/s-amuel-18",
-        "demo": "",
-        "stars": 8,
-        "forks": 1,
-        "language": "PHP",
-        "featured": true
-    },
-    {
-        "id": "react-portfolio",
-        "title": "Minimalist Dev Portfolio",
-        "description": {
-            "en": "A minimalist and customizable portfolio template for developers built with React, Tailwind CSS, and Framer Motion.",
-            "es": "Plantilla de portafolio minimalista y personalizable para desarrolladores construida con React, Tailwind CSS y Framer Motion."
-        },
-        "tech": [
+            "Next.js",
             "React.js",
-            "TypeScript"
+            "MongoDB",
+            "Jest"
         ],
-        "github": "https://github.com/s-amuel-18",
-        "stars": 4,
-        "forks": 1,
+        "content": {
+            "en": "## About the Platform\n**Estei.app** is a Venezuelan technology platform often described as the *'Venezuelan Airbnb'*, designed specifically for booking accommodations and tourist experiences across Venezuela.\n\nI actively participated in the technical evolution of the platform, specializing in the transition from a tightly coupled system toward a modern, scalable, and high-availability architecture.\n\n## Key Contributions\n\n### Architecture & Refactoring\nImplemented **Hexagonal Architecture (Ports & Adapters)** in critical modules to decouple business logic from external dependencies. This facilitated swapping tools and third-party implementations without affecting the system core, significantly reducing technical debt.\n\n### API Ecosystem & Integrations\nDeveloped and documented (via Postman) robust APIs for inter-platform communication and external exposure to partner companies. Integrated services such as **MetaMap** (identity verification), **Twilio** (notifications), and calendar synchronization with external applications.\n\n### Quality & Resilience\nEnsured code integrity through the implementation of **Unit and Integration Tests (Jest/Vitest)**, raising the confidence standard for each deployment.\n\n### Security & Availability\nStrengthened backend infrastructure by applying **Rate Limiting** and **Load Balancing** strategies, ensuring service stability under traffic spikes and protecting endpoints from abuse.\n\n### Full Stack Modern\nBuilt dynamic, optimized interfaces with **Next.js** and **React**, connected to a scalable persistence layer in **MongoDB**.",
+            "es": "## Sobre la Plataforma\n**Estei.app** es una plataforma tecnológica venezolana a menudo descrita como el *'Airbnb venezolano'*, diseñada específicamente para la reserva de hospedajes y experiencias turísticas dentro de Venezuela.\n\nParticipé activamente en la evolución técnica de la plataforma, especializándome en la transición de un sistema acoplado hacia una arquitectura moderna, escalable y de alta disponibilidad.\n\n## Aportes y Logros Técnicos\n\n### Arquitectura y Refactorización\nImplementé **Arquitectura Hexagonal (Ports & Adapters)** en módulos clave para desacoplar la lógica de negocio de las dependencias externas. Esto facilitó el cambio de herramientas e implementaciones de terceros sin afectar el núcleo del sistema, reduciendo significativamente la deuda técnica.\n\n### Ecosistema de APIs e Integraciones\nDesarrollé y documenté (vía Postman) APIs robustas para la comunicación entre plataformas y exposición externa para empresas aliadas. Integré servicios como **MetaMap** (identidad), **Twilio** (notificaciones) y sincronización de calendarios con aplicaciones externas.\n\n### Calidad y Resiliencia\nAseguré la integridad del código mediante la implementación de **Tests Unitarios e Integración (Jest/Vitest)**, elevando el estándar de confianza en cada despliegue.\n\n### Seguridad y Disponibilidad\nFortalecí la infraestructura del backend mediante la aplicación de **Rate Limiting** y estrategias de **Balanceo de Carga**, garantizando la estabilidad del servicio ante picos de tráfico y protegiendo los endpoints.\n\n### Stack Full Stack Moderno\nConstruí interfaces dinámicas y optimizadas con **Next.js** y **React**, conectadas a una capa de persistencia escalable en **MongoDB**."
+        },
+        "projectUrl": "https://estei.app",
+        "image": "/images/estei-screen1.png",
+        "github": "",
+        "demo": "https://estei.app",
+        "stars": 0,
+        "forks": 0,
         "language": "TypeScript",
+        "featured": true
+    },
+    {
+        "id": "armi",
+        "title": "Armi",
+        "description": {
+            "en": "Multi-tenant platform that empowers brands to scale their digital presence through personalized, self-managed online stores. As backend tech lead I architected the core processing +9,000 monthly orders.",
+            "es": "Plataforma Multi-tenant que permite a marcas escalar su presencia digital con tiendas personalizadas y autogestionables. Como responsable técnico del backend, diseñé el núcleo que procesa +9,000 pedidos mensuales."
+        },
+        "tech": [
+            "Node.js",
+            "RabbitMQ",
+            "Redis",
+            "PostgreSQL",
+            "MongoDB"
+        ],
+        "content": {
+            "en": "## About the Platform\n**Armi** is a Multi-tenant platform designed for brands to scale their digital presence through personalized and self-managed sites. As the technical lead of the backend core, I drove the design of critical modules for an ecosystem that **processes +9,000 monthly orders**, being decisive in the architecture, security, and scalability of the product.\n\n## Key Achievements & Technical Impact\n\n### Sales Automation (WhatsApp API)\nDeveloped a **multi-store bot ecosystem** using the official Meta API. Automated the complete flow — from order intake to real-time tracking — making it the **platform's #1 sales channel**.\n\n### Infrastructure Optimization\nImplemented a **caching system that reduced endpoint latency by 70%**, optimizing server efficiency and the end-user experience.\n\n### Massive Processing & Resilience\nDesigned a **bulk load engine for files up to 40,000 rows** (handling ~40 loads/hour). Used **RabbitMQ** for an asynchronous messaging architecture, eliminating server bottlenecks and guaranteeing system stability.\n\n### Fintech & Transactional Security\nIntegrated payment gateways and national banking (**Pago Móvil**). Ensured transaction integrity through **RSA public/private key cryptography**, mitigating fraud and order collisions.\n\n### Logistics & Delivery\nDeveloped integration with proprietary fleets and external services for delivery status synchronization and route optimization.\n\n### Software Quality\nIntroduced **automated tests** into the development cycle, drastically reducing critical errors in production and increasing deployment reliability.",
+            "es": "## Sobre la Plataforma\n**Armi** es una plataforma Multi-tenant diseñada para que marcas escalen su presencia digital mediante sitios personalizados y autogestionables. Como responsable técnico del núcleo backend, lideré el diseño de módulos críticos para un ecosistema que **procesa +9,000 pedidos mensuales**, siendo determinante en la arquitectura, seguridad y escalabilidad del producto.\n\n## Logros e Impacto Técnico\n\n### Automatización de Ventas (WhatsApp API)\nDesarrollé un **ecosistema de bots multi-tienda** utilizando la API oficial de Meta. Automaticé el flujo completo, desde la toma de pedidos hasta el seguimiento en tiempo real, convirtiéndose en el **canal de ventas número uno de la plataforma**.\n\n### Optimización de Infraestructura\nImplementé un **sistema de caché que redujo la latencia de los endpoints en un 70%**, optimizando la eficiencia de los servidores y la experiencia del usuario final.\n\n### Procesamiento Masivo y Resiliencia\nDiseñé un **motor de cargas masivas para archivos de hasta 40,000 filas** (gestionando ~40 cargas/hora). Utilicé **RabbitMQ** para una arquitectura de mensajería asíncrona, eliminando bloqueos en el servidor y garantizando la estabilidad del sistema.\n\n### Fintech y Seguridad Transaccional\nIntegré pasarelas de pago y banca nacional (**Pago Móvil**). Aseguré la integridad de las transacciones mediante **criptografía de llaves públicas/privadas (RSA)**, mitigando fraudes y colisiones de pedidos.\n\n### Logística y Delivery\nDesarrollé la integración con flotas propias y servicios externos para la sincronización de estatus de entrega y optimización de rutas.\n\n### Calidad de Software\nIntroduje **tests automatizados** en el ciclo de desarrollo, reduciendo drásticamente los errores críticos en producción y aumentando la fiabilidad de los despliegues."
+        },
+        "projectUrl": "https://tuarmi.com/ve",
+        "image": "/images/project-armi.webp",
+        "github": "",
+        "demo": "https://tuarmi.com/ve",
+        "stars": 0,
+        "forks": 0,
+        "language": "TypeScript",
+        "featured": true
+    },
+    {
+        "id": "debugging",
+        "title": "Debugging Exercises",
+        "description": {
+            "en": "A comprehensive collection of practical debugging exercises designed to teach debugging skills in JavaScript.",
+            "es": "Una colección completa de ejercicios prácticos de depuración diseñados para enseñar habilidades de debugging en JavaScript."
+        },
+        "tech": [
+            "Node.js",
+            "JavaScript",
+            "Jest"
+        ],
+        "github": "https://github.com/s-amuel-18/debugging-exercises",
+        "stars": 3,
+        "forks": 3,
+        "language": "JavaScript",
         "featured": false
     },
     {
-        "id": "cli-scaffold",
-        "title": "Backend Scaffolding Tool",
+        "id": "algorithms",
+        "title": "Algorithms",
         "description": {
-            "en": "A command-line interface tool to quickly scaffold Node.js and NestJS projects with pre-configured best practices and testing suites.",
-            "es": "Interfaz de línea de comandos para estructurar rápidamente proyectos Node.js y NestJS pre-configurados con mejores prácticas y pruebas."
+            "en": "A structured and pedagogically designed repository to learn algorithms and data structures through practical exercises.",
+            "es": "Un repositorio estructurado y pedagógicamente diseñado para aprender algoritmos y estructuras de datos a través de ejercicios prácticos."
         },
         "tech": [
             "Node.js",
-            "TypeScript"
+            "JavaScript",
+            "Jest"
         ],
-        "github": "https://github.com/s-amuel-18",
-        "stars": 9,
-        "forks": 2,
-        "language": "TypeScript",
+        "github": "https://github.com/s-amuel-18/algorithms",
+        "forks": 3,
+        "language": "JavaScript",
         "featured": false
     }
 ]

@@ -61,7 +61,7 @@ const getIcon = (tech: string) => techIcons[tech] || "lucide:code";
                   
                   <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
                     <div>
-                      <h3 class="text-2xl font-black text-foreground group-hover:text-accent-cyan transition-colors tracking-tight">{job.role}</h3>
+                      <h3 class="text-2xl font-black text-foreground group-hover:text-accent-cyan transition-colors tracking-tight">{job.role[lang]}</h3>
                       <p class="text-lg text-muted-foreground font-bold mt-1">@ {job.company}</p>
                     </div>
                   </div>

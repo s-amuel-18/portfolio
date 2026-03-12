@@ -1,17 +1,21 @@
 {
     "name": "Samuel",
-    "shortName": "Samuel Graterol",
+    "shortName": "Samuel Graterol Lobo",
     "roles": [
         "Fullstack Developer",
-        "Backend Specialist",
-        "Software Engineer"
+        "Software Developer",
+        "Backend Architecture"
     ],
-    "tagline": "Building scalable systems & automating processes since 2021",
-    "image": "/images/profile.png",
+    "tagline": {
+        "en": "Building scalable systems & automating processes since 2021",
+        "es": "Llevando desarrollos escalables y automatizando procesos desde 2021"
+    },
+    "image": "/images/profile.jpg",
     "socials": {
         "github": "https://github.com/s-amuel-18",
-        "linkedin": "https://linkedin.com/in/samuel-graterol-lobo",
-        "email": "samueldeveloper20@gmail.com"
+        "linkedin": "https://www.linkedin.com/in/samuel-graterol-lobo/",
+        "email": "samueldeveloper20@gmail.com",
+        "phone": "+58 424 280 5116"
     },
     "status": {
         "available": true,
@@ -19,9 +23,9 @@
         "badgeEs": "Disponible 🟢"
     },
     "stats": {
-        "experienceYears": 4,
+        "experienceYears": 5,
         "projectsCompleted": 8,
-        "companiesWorked": 3,
+        "companiesWorked": 6,
         "countries": 2
     }
 }

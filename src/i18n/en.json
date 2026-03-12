@@ -9,9 +9,14 @@
     "hero.viewProjects": "View Projects",
     "hero.downloadCV": "Download CV",
     "about.title": "About Me",
-    "about.summary1": "I am a dedicated Backend Specialist and Fullstack Developer with a passion for building scalable infrastructure and optimizing API performance. With years of experience across multiple companies and projects, I continuously strive to automate processes and integrate the latest technologies securely and efficiently.",
-    "about.summary2": "My motivation relies on delivering robust systems that abstract complexity into seamless user experiences, backed by rigorous testing and architectural best practices.",
+    "about.summary1": "Fullstack developer with experience since 2021, specializing in backend and software architecture. Strong ability to develop complex systems, with a tendency towards process automation.",
+    "about.summary2": "Focused on innovative solutions and continuous improvement.",
     "about.yearsExp": "Years of experience",
+    "about.interests.title": "Interests",
+    "about.interests.reading.title": "Reading",
+    "about.interests.reading.desc": "Passionate about reading books on technology, entrepreneurship, and startups, always looking for new ideas and trends in the industry.",
+    "about.interests.dev.title": "Product Development",
+    "about.interests.dev.desc": "In my free time, I enjoy developing tech products to exercise my sense of innovation and improve daily processes through technology.",
     "about.projects": "Projects completed",
     "about.companies": "Companies worked",
     "about.countries": "Countries",
@@ -29,5 +34,5 @@
     "contact.title": "Let's work together",
     "contact.description": "I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
     "footer.builtWith": "Built with Astro & ☕",
-    "cv.url": "/cv/samuel-graterol-cv-en.pdf"
+    "cv.url": "/cv/en/cv.pdf"
 }

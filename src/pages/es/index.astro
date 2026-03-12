@@ -15,6 +15,7 @@ import Skills from '../../components/sections/Skills.astro';
 import Projects from '../../components/sections/Projects.astro';
 import OtherProjects from '../../components/sections/OtherProjects.astro';
 import Education from '../../components/sections/Education.astro';
+import Interests from '../../components/sections/Interests.astro';
 import Contact from '../../components/sections/Contact.astro';
 
 import { TypingEffect } from '../../components/ui/TypingEffect';
@@ -22,7 +23,7 @@ import { AnimatedSection } from '../../components/ui/AnimatedSection';
 
 const { name, tagline, roles, image } = profileData;
 const title = `${name} — Fullstack Developer | Backend Specialist`;
-const description = tagline;
+const description = tagline[lang as keyof typeof tagline] || tagline.en;
 ---
 
 <BaseLayout title={title} description={description}>
@@ -50,7 +51,7 @@ const description = tagline;
             </div>
             
             <p class="text-muted-foreground text-lg md:text-xl max-w-xl mb-12 leading-relaxed font-medium">
-              {tagline}
+              {description}
             </p>
             
             <div class="flex flex-wrap items-center gap-6">
@@ -93,6 +94,7 @@ const description = tagline;
     <Projects />
     <OtherProjects />
     <Education />
+    <Interests />
     <Contact />
     
   </main>

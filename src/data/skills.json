@@ -1,7 +1,9 @@
 [
     {
-        "category": "Backend",
-        "categoryEs": "Backend",
+        "category": {
+            "en": "Backend",
+            "es": "Backend"
+        },
         "techs": [
             {
                 "name": "Node.js",
@@ -26,12 +28,22 @@
         ]
     },
     {
-        "category": "Frontend",
-        "categoryEs": "Frontend",
+        "category": {
+            "en": "Frontend",
+            "es": "Frontend"
+        },
         "techs": [
             {
                 "name": "React.js",
                 "icon": "logos:react"
+            },
+            {
+                "name": "Next.js",
+                "icon": "logos:nextjs-icon"
+            },
+            {
+                "name": "Tailwind CSS",
+                "icon": "logos:tailwindcss-icon"
             },
             {
                 "name": "HTML5",
@@ -48,26 +60,54 @@
         ]
     },
     {
-        "category": "Databases",
-        "categoryEs": "Bases de Datos",
+        "category": {
+            "en": "Databases",
+            "es": "Bases de Datos"
+        },
         "techs": [
             {
                 "name": "MySQL",
                 "icon": "logos:mysql"
             },
             {
-                "name": "PostgreSQL",
-                "icon": "logos:postgresql"
-            },
-            {
                 "name": "MongoDB",
                 "icon": "logos:mongodb-icon"
+            },
+            {
+                "name": "Redis",
+                "icon": "logos:redis"
+            },
+            {
+                "name": "PostgreSQL",
+                "icon": "logos:postgresql"
             }
         ]
     },
     {
-        "category": "Tools & DevOps",
-        "categoryEs": "Herramientas y DevOps",
+        "category": {
+            "en": "Mobile",
+            "es": "Mobile"
+        },
+        "techs": [
+            {
+                "name": "React Native",
+                "icon": "logos:react"
+            },
+            {
+                "name": "Android",
+                "icon": "logos:android-icon"
+            },
+            {
+                "name": "iOS",
+                "icon": "mdi:apple"
+            }
+        ]
+    },
+    {
+        "category": {
+            "en": "Tools & DevOps",
+            "es": "Herramientas y DevOps"
+        },
         "techs": [
             {
                 "name": "Git",
@@ -76,12 +116,18 @@
             {
                 "name": "WordPress",
                 "icon": "logos:wordpress-icon"
+            },
+            {
+                "name": "RabbitMQ",
+                "icon": "logos:rabbitmq"
             }
         ]
     },
     {
-        "category": "Currently Learning",
-        "categoryEs": "Actualmente Aprendiendo",
+        "category": {
+            "en": "Currently Learning",
+            "es": "Actualmente Aprendiendo"
+        },
         "techs": [
             {
                 "name": "Docker",

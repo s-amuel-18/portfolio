@@ -9,9 +9,14 @@
     "hero.viewProjects": "Ver Proyectos",
     "hero.downloadCV": "Descargar CV",
     "about.title": "Sobre Mí",
-    "about.summary1": "Soy un Especialista en Backend y Desarrollador Fullstack dedicado, con pasión por construir infraestructura escalable y optimizar el rendimiento de APIs. Con años de experiencia en múltiples empresas y proyectos, me esfuerzo continuamente por automatizar procesos e integrar las últimas tecnologías de manera segura y eficiente.",
-    "about.summary2": "Mi motivación radica en entregar sistemas robustos que abstraigan la complejidad en experiencias de usuario fluidas, respaldadas por pruebas rigurosas y mejores prácticas arquitectónicas.",
+    "about.summary1": "Desarrollador fullstack con experiencia desde 2021, especializado en backend y arquitectura de software. Fuerte capacidad para desarrollar sistemas complejos, con tendencia a la automatización de procesos.",
+    "about.summary2": "Enfocado en soluciones innovadoras y mejora continua.",
     "about.yearsExp": "Años de experiencia",
+    "about.interests.title": "Intereses",
+    "about.interests.reading.title": "Lectura",
+    "about.interests.reading.desc": "Apasionado por la lectura de libros sobre tecnología, emprendimiento y startups, siempre en busca de nuevas ideas y tendencias en el sector.",
+    "about.interests.dev.title": "Desarrollo de Productos",
+    "about.interests.dev.desc": "En mi tiempo libre, disfruto desarrollando productos tecnológicos como una forma de ejercitar mi sentido de la innovación y mejorar procesos cotidianos mediante la tecnología.",
     "about.projects": "Proyectos completados",
     "about.companies": "Empresas en las que he trabajado",
     "about.countries": "Países",
@@ -29,5 +34,5 @@
     "contact.title": "¿Hablamos?",
     "contact.description": "Siempre estoy abierto a discutir nuevos proyectos, ideas creativas o dar la oportunidad de ser parte de tus visiones.",
     "footer.builtWith": "Construido con Astro y ☕",
-    "cv.url": "/cv/samuel-graterol-cv-es.pdf"
+    "cv.url": "/cv/es/cv.pdf"
 }

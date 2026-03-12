@@ -36,7 +36,7 @@ const contentHtml = marked.parse(project.content?.[lang] || '');
         <div class="w-full lg:w-1/2 relative group">
            <div class="absolute inset-0 bg-gradient-main rounded-[2rem] blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
            <img
-             src={import.meta.env.BASE_URL+project.image}
+             src={project.image}
              alt={project.title}
              transition:name={`project-img-${project.id}`}
              class="w-full relative rounded-[2rem] shadow-xl border border-white/5 object-cover h-64 md:h-[22rem]"

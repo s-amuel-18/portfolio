@@ -6,8 +6,9 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://s-amuel-18.github.io',
-  base: 'portfolio',
+  ...(import.meta.env.MODE === 'production'
+    ? { site: 'https://s-amuel-18.github.io' }
+    : {}),
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'es'],
